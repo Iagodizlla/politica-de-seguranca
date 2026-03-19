@@ -92,21 +92,18 @@ footer {
 }
 
 /* ===== PÁGINAS DE CONTEÚDO ===== */
-
 .content-page {
     width: 90%;
     max-width: 800px;
     margin: 20px auto 40px;
 }
 
-/* Card ajustado pra leitura */
 .content-page .card {
     text-align: left;
     line-height: 1.7;
     padding: 30px;
 }
 
-/* Botão de voltar */
 .back-container {
     width: 100%;
     max-width: 800px;
@@ -127,7 +124,6 @@ footer {
     transition: 0.25s;
 }
 
-/* hover bonito */
 .back-btn:hover {
     background: #3b82f6;
     color: white;
@@ -135,23 +131,40 @@ footer {
     transform: translateX(-3px);
 }
 
-/* Centralizar quando for página única */
 .container.single {
     display: flex;
     justify-content: center;
 }
 
-/* Botão fixo no canto */
 .back-btn.fixed {
     position: fixed;
     bottom: 20px;
     right: 20px;
 }
 
-/* melhora visual do card pra texto */
 .container.single .card {
     max-width: 800px;
     text-align: left;
     line-height: 1.7;
     padding: 30px;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 480px) {
+
+    header {
+        padding: 30px 10px 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        border-radius: 10px;
+    }
+
+    .container.single .card {
+        padding: 20px;
+    }
 }
